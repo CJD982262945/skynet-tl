@@ -110,6 +110,8 @@ local skynet = record
 
     rawcall: function(number | string, string, any, number): any...
 
+    tostring: function(any, number): string -- 将这个 C 指针和长度翻译成 lua 的 string
+
     -- 带有 全局的 true 标示 暂时没用过
     uniqueservice: function(string, ...: any): number
 

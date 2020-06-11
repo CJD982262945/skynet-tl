@@ -4,7 +4,7 @@ local mode = ...
 
 if mode == "slave" then
 
-local CMD: {string: function(...:any) } = {
+local CMD: {string: function(...:any): any... } = {
     sum = function(n: number)
         skynet.error("for loop begin")
         local s = 0
@@ -13,6 +13,7 @@ local CMD: {string: function(...:any) } = {
         end
         skynet.error("for loop end")
     end,
+    
     blackhole = function()
     end
 }
